@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Comfortaa:wght@300&family=Heebo:wght@300;400&family=Inter:wght@100&family=Libre+Bodoni&family=Montserrat:wght@600&family=Mulish:wght@200&family=PT+Sans&family=Pacifico&family=Plus+Jakarta+Sans:wght@300&family=Poiret+One&family=Poppins:wght@200&family=Radio+Canada:wght@300&family=Roboto&family=Rubik:wght@300&family=Ubuntu:wght@300&display=swap');
+
+
+body{
+    font-family: 'Poiret One', cursive;
+    overflow: hidden;
+    background: conic-gradient(from -270deg at 75% 110%, fuchsia, floralwhite);
+}
+
+.container{
+    /* border: 1px solid black; */
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.digital-clock{
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: #fff;
+    background: rgb(0, 0, 0, 0.1);
+}
+
+.digital-clock h1{
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+@media(max-width:768px){
+    #bar1, #bar2{
+        display: none;
+    }
+
+    .digital-clock{
+        text-align: center;
+        width: 100%;
+    }
+
+    .digital-clock h1{
+        display: block;
+    }
+}
+
+@media(max-width:480px){
+    .digital-clock h1{
+        font-size: 4rem;
+    }
+}
